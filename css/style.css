@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+body{
+    box-sizing: inherit;
+    margin: auto 1em;
+}
+.cointainer{
+    display: grid;
+    grid-template-areas:"header"
+                        "main";
+    grid-row: 1fr 2fr;
+    grid-column: 1fr;
+}
+header{
+    grid-area: header;
+    font-size: 5em;
+    text-align: center;
+    margin: 1em;
+    background-color: #FFE666;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+.title-page{
+    padding: .5em;
+}
+main{
+    grid-area: main;
+    font-size: 4em;
+    text-align: center;
+}
+.replay{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.answers{
+    padding: 1em;
+    font-size: .5em;
+}
