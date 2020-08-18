@@ -36,11 +36,52 @@ main{
 }
 .replay{
     display: flex;
+    display: grid;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    grid-template-areas:"one two"
+                        "three four";
+    grid-row: 1fr 1fr;
+    grid-column: 1fr 1fr;
+}
+.ask1{
+    grid-area: one;
+}
+.ask2{
+    grid-area:two ;
+}
+.ask3{
+    grid-area: three;
+}
+.ask4{
+    grid-area:four ;
 }
 .answers{
     padding: 1em;
     font-size: .5em;
+    color: black;
+    margin: .5em;
+    border-radius: 3em 1em 3em 1em;
+    -webkit-border-radius: 3em 1em 3em 1em;
+    -moz-border-radius: 3em 1em 3em 1em;
+    -ms-border-radius: 3em 1em 3em 1em;
+    -o-border-radius: 3em 1em 3em 1em;
+    background-color: #88FF4D;
+    border: none;
+    outline:none;
+    transition: background .2s linear;
+    -webkit-transition: background .2s linear;
+    -moz-transition: background .2s linear;
+    -ms-transition: background .2s linear;
+    -o-transition: background .2s linear;
+}
+.answers:focus{
+    background-color: #FFFF80;
+}
+.is-open{
+    display: block;
+}
+.is-close{
+    display: none;
 }
