@@ -45,4 +45,3 @@ function start() {
     goodAnswer2.addEventListener('click', () => { score++; });
     goodAnswer3.addEventListener('click', () => { score++; });
 }
-// 3 1 4
